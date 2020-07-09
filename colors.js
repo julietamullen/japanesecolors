@@ -30,7 +30,7 @@ white.addEventListener("touchend", function () {
 
 // BLACK
 black.addEventListener("mouseenter", function () {
-    black.innerHTML = "くろい<br>ku · ro ·i";
+    black.innerHTML = "くろい<br>ku · ro · i";
     black.style.background = "black";
     black.style.color = "white";
 })
@@ -41,7 +41,7 @@ black.addEventListener("mouseleave", function () {
 
 })
 black.addEventListener("touchstart", function () {
-    black.innerHTML = "くろい<br>ku · ro ·i";
+    black.innerHTML = "くろい<br>ku · ro · i";
     black.style.background = "black";
     black.style.color = "white";
 })
@@ -55,7 +55,7 @@ black.addEventListener("touchend", function () {
 // GRAY
 
 gray.addEventListener("mouseenter", function () {
-    gray.innerHTML = "はいいろ<br>hai · iro";
+    gray.innerHTML = "はいいろ<br>ha · ii ro";
     gray.style.background = "grey";
     gray.style.color = "white";
 })
@@ -178,7 +178,7 @@ purple.addEventListener("touchend", function () {
 // ORANGE
 
 orange.addEventListener("mouseenter", function () {
-    orange.innerHTML = "だいだいいろ<br>da · i · da · ii · ro";
+    orange.innerHTML = "だいだい<br>da · i · da · i";
     orange.style.background = "#ff9412";
     orange.style.color = "white";
 })
@@ -189,7 +189,7 @@ orange.addEventListener("mouseleave", function () {
 
 })
 orange.addEventListener("touchstart", function () {
-    orange.innerHTML = "だいだいいろ<br>da · i · da · ii · ro";
+    orange.innerHTML = "だいだい<br>da · i · da · i";
     orange.style.background = "#ff9412";
     orange.style.color = "white";
 })
