@@ -139,7 +139,7 @@ yellow.addEventListener("mouseleave", function () {
 
 })
 yellow.addEventListener("touchstart", function () {
-    yellow.innerHTML = "きいろい<br>ki · i · o · ri";
+    yellow.innerHTML = "きいろい<br>ki · i · ro";
     yellow.style.background = "#ffe814";
     yellow.style.color = "white";
 })
