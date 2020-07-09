@@ -178,7 +178,7 @@ purple.addEventListener("touchend", function () {
 // ORANGE
 
 orange.addEventListener("mouseenter", function () {
-    orange.innerHTML = "だいだいいろ<br>da · i · da · i · ro";
+    orange.innerHTML = "だいだいいろ<br>da · i · da · ii · ro";
     orange.style.background = "#ff9412";
     orange.style.color = "white";
 })
