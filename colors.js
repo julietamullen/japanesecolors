@@ -128,7 +128,7 @@ blue.addEventListener("touchend", function () {
 // YELLOW 
 
 yellow.addEventListener("mouseenter", function () {
-    yellow.innerHTML = "きいろい<br>ki · i · o · ri";
+    yellow.innerHTML = "きいろ<br>ki · i · ro";
     yellow.style.background = "#ffe814";
     yellow.style.color = "white";
 })
