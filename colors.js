@@ -55,7 +55,7 @@ black.addEventListener("touchend", function () {
 // GRAY
 
 gray.addEventListener("mouseenter", function () {
-    gray.innerHTML = "はいいろ<br>ha · ii ro";
+    gray.innerHTML = "はいいろ<br>ha · ii · ro";
     gray.style.background = "grey";
     gray.style.color = "white";
 })
