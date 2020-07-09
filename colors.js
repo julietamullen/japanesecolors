@@ -169,9 +169,9 @@ purple.addEventListener("touchstart", function () {
     purple.style.color = "white";
 })
 purple.addEventListener("touchend", function () {
-    purple.innerHTML = "むらさき<br>mu · ra · sa · ki";
-    purple.style.background = "purple";
-    purple.style.color = "white";
+    purple.innerHTML = "PURPLE";
+    purple.style.background = "white";
+    purple.style.color = "black";
 
 })
 
