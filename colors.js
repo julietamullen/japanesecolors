@@ -114,9 +114,9 @@ blue.addEventListener("mouseleave", function () {
 
 })
 blue.addEventListener("touchstart", function () {
-    red.innerHTML = "あか<br>a · ka";
-    red.style.background = "#4260f5";
-    red.style.color = "white";
+    blue.innerHTML = "あか<br>a · ka";
+    blue.style.background = "#4260f5";
+    blue.style.color = "white";
 })
 blue.addEventListener("touchend", function () {
     blue.innerHTML = "BLUE"
