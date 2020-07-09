@@ -94,7 +94,7 @@ red.addEventListener("touchstart", function () {
     red.style.color = "white";
 })
 red.addEventListener("touchend", function () {
-    red.innerHTML = "BLACK"
+    red.innerHTML = "RED"
     red.style.background = "white";
     red.style.color = "black";
 
@@ -113,12 +113,12 @@ blue.addEventListener("mouseleave", function () {
     blue.style.color = "black";
 
 })
-red.addEventListener("touchstart", function () {
+blue.addEventListener("touchstart", function () {
     red.innerHTML = "あか<br>a · ka";
     red.style.background = "#4260f5";
     red.style.color = "white";
 })
-red.addEventListener("touchend", function () {
+blue.addEventListener("touchend", function () {
     blue.innerHTML = "BLUE"
     blue.style.background = "white";
     blue.style.color = "black";
