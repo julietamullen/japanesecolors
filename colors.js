@@ -40,12 +40,12 @@ black.addEventListener("mouseleave", function () {
     black.style.color = "black";
 
 })
-black.addEventListener("mousedown", function () {
+black.addEventListener("touchstart", function () {
     black.innerHTML = "くろい<br>ku · ro ·i";
     black.style.background = "black";
     black.style.color = "white";
 })
-black.addEventListener("mouseup", function () {
+black.addEventListener("touchend", function () {
     black.innerHTML = "BLACK"
     black.style.background = "white";
     black.style.color = "black";
