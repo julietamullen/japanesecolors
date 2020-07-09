@@ -21,10 +21,10 @@ white.addEventListener("mouseenter", function () {
 white.addEventListener("mouseleave", function () {
     white.innerHTML = "WHITE"
 })
-white.addEventListener("mousedown", function () {
+white.addEventListener("touchstart", function () {
     white.innerHTML = "しろ<br>shi · ro"
 })
-white.addEventListener("mouseup", function () {
+white.addEventListener("touchend", function () {
     white.innerHTML = "WHITE"
 })
 
@@ -64,12 +64,12 @@ gray.addEventListener("mouseleave", function () {
     gray.style.background = "white";
     gray.style.color = "black"
 })
-gray.addEventListener("mousedown", function () {
+gray.addEventListener("touchstart", function () {
     gray.innerHTML = "はいいろ<br>hai · iro";
     gray.style.background = "grey";
     gray.style.color = "white";
 })
-gray.addEventListener("mouseup", function () {
+gray.addEventListener("touchend", function () {
     gray.innerHTML = "GRAY"
     gray.style.background = "white";
     gray.style.color = "black"
@@ -88,12 +88,12 @@ red.addEventListener("mouseleave", function () {
     red.style.color = "black";
 
 })
-red.addEventListener("mousedown", function () {
+red.addEventListener("touchstart", function () {
     red.innerHTML = "あか<br>a · ka";
     red.style.background = "#ff1205";
     red.style.color = "white";
 })
-red.addEventListener("mouseup", function () {
+red.addEventListener("touchend", function () {
     red.innerHTML = "BLACK"
     red.style.background = "white";
     red.style.color = "black";
@@ -113,12 +113,12 @@ blue.addEventListener("mouseleave", function () {
     blue.style.color = "black";
 
 })
-red.addEventListener("mousedown", function () {
+red.addEventListener("touchstart", function () {
     red.innerHTML = "あか<br>a · ka";
     red.style.background = "#4260f5";
     red.style.color = "white";
 })
-red.addEventListener("mouseup", function () {
+red.addEventListener("touchend", function () {
     blue.innerHTML = "BLUE"
     blue.style.background = "white";
     blue.style.color = "black";
@@ -138,12 +138,12 @@ yellow.addEventListener("mouseleave", function () {
     yellow.style.color = "black";
 
 })
-yellow.addEventListener("mousedown", function () {
+yellow.addEventListener("touchstart", function () {
     yellow.innerHTML = "きいろい<br>ki · i · o · ri";
     yellow.style.background = "#ffe814";
     yellow.style.color = "white";
 })
-yellow.addEventListener("mouseup", function () {
+yellow.addEventListener("touchend", function () {
     yellow.innerHTML = "YELLOW";
     yellow.style.background = "white";
     yellow.style.color = "black";
@@ -163,12 +163,12 @@ purple.addEventListener("mouseleave", function () {
     purple.style.color = "black";
 
 })
-purple.addEventListener("mousedown", function () {
+purple.addEventListener("touchstart", function () {
     purple.innerHTML = "むらさき<br>mu · ra · sa · ki";
     purple.style.background = "#b825d9";
     purple.style.color = "white";
 })
-purple.addEventListener("mouseup", function () {
+purple.addEventListener("touchend", function () {
     purple.innerHTML = "むらさき<br>mu · ra · sa · ki";
     purple.style.background = "purple";
     purple.style.color = "white";
@@ -188,12 +188,12 @@ orange.addEventListener("mouseleave", function () {
     orange.style.color = "black";
 
 })
-orange.addEventListener("mousedown", function () {
+orange.addEventListener("touchstart", function () {
     orange.innerHTML = "だいだいいろ<br>da · i · da · ii · ro";
     orange.style.background = "#ff9412";
     orange.style.color = "white";
 })
-orange.addEventListener("mouseup", function () {
+orange.addEventListener("touchend", function () {
     orange.innerHTML = "ORANGE";
     orange.style.background = "white";
     orange.style.color = "black";
@@ -212,12 +212,12 @@ green.addEventListener("mouseleave", function () {
     green.style.color = "black";
 
 })
-green.addEventListener("mousedown", function () {
+green.addEventListener("touchstart", function () {
     green.innerHTML = "みどり<br>mi · do · ri";
     green.style.background = "#4bd636";
     green.style.color = "white";
 })
-green.addEventListener("mouseup", function () {
+green.addEventListener("touchend", function () {
     green.innerHTML = "GREEN";
     green.style.background = "white";
     green.style.color = "black";
