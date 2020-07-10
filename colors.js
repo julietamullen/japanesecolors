@@ -65,7 +65,7 @@ gray.addEventListener("mouseleave", function () {
     gray.style.color = "black"
 })
 gray.addEventListener("touchstart", function () {
-    gray.innerHTML = "はいいろ<br>hai · iro";
+    gray.innerHTML = "はいいろ<br>ha · ii · ro";
     gray.style.background = "grey";
     gray.style.color = "white";
 })
