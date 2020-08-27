@@ -14,212 +14,87 @@ var purple = document.querySelector(".purple")
 var orange = document.querySelector(".orange")
 var green = document.querySelector(".green")
 
+// FUNCTIONS
+
+function changeColorTap (color, HTML, bg, event) {
+    var color = document.querySelector(color)
+    color.addEventListener(event, function () {
+    color.innerHTML = HTML;
+    color.style.background = bg;
+    color.style.color = "white";
+})
+}
+
+function changeColorTapWhite (color, HTML, bg, event) {
+    var color = document.querySelector(color)
+    color.addEventListener(event, function () {
+    color.innerHTML = HTML;
+    color.style.background = bg;
+})
+}
+
+function changeColorUntap (color, HTML, event) {
+    var color = document.querySelector(color)
+    color.addEventListener(event, function () {
+    color.innerHTML = HTML;
+    color.style.background = "white";
+    color.style.color = "black";
+})
+}
+
 // WHITE
-white.addEventListener("mouseenter", function () {
-    white.innerHTML = "しろ<br>shi · ro"
-})
-white.addEventListener("mouseleave", function () {
-    white.innerHTML = "WHITE"
-})
-white.addEventListener("touchstart", function () {
-    white.innerHTML = "しろ<br>shi · ro"
-})
-white.addEventListener("touchend", function () {
-    white.innerHTML = "WHITE"
-})
+
+changeColorTapWhite(".white", "しろ<br>shi · ro", "white", "mouseenter")
+changeColorTapWhite(".white", "しろ<br>shi · ro", "white", "touchstart")
+changeColorUntap(".white", "WHITE", "mouseleave")
+changeColorUntap(".white", "WHITE", "touchend")
 
 // BLACK
-black.addEventListener("mouseenter", function () {
-    black.innerHTML = "くろい<br>ku · ro · i";
-    black.style.background = "black";
-    black.style.color = "white";
-})
-black.addEventListener("mouseleave", function () {
-    black.innerHTML = "BLACK"
-    black.style.background = "white";
-    black.style.color = "black";
 
-})
-black.addEventListener("touchstart", function () {
-    black.innerHTML = "くろい<br>ku · ro · i";
-    black.style.background = "black";
-    black.style.color = "white";
-})
-black.addEventListener("touchend", function () {
-    black.innerHTML = "BLACK"
-    black.style.background = "white";
-    black.style.color = "black";
-
-})
+changeColorTap(".black", "くろい<br>ku · ro · i", "black", "mouseenter")
+changeColorTap(".black", "くろい<br>ku · ro · i", "black", "touchstart")
+changeColorUntap(".black", "BLACK", "mouseleave")
+changeColorUntap(".black", "BLACK", "touchend")
 
 // GRAY
-
-gray.addEventListener("mouseenter", function () {
-    gray.innerHTML = "はいいろ<br>ha · ii · ro";
-    gray.style.background = "grey";
-    gray.style.color = "white";
-})
-gray.addEventListener("mouseleave", function () {
-    gray.innerHTML = "GRAY"
-    gray.style.background = "white";
-    gray.style.color = "black"
-})
-gray.addEventListener("touchstart", function () {
-    gray.innerHTML = "はいいろ<br>ha · ii · ro";
-    gray.style.background = "grey";
-    gray.style.color = "white";
-})
-gray.addEventListener("touchend", function () {
-    gray.innerHTML = "GRAY"
-    gray.style.background = "white";
-    gray.style.color = "black"
-})
+changeColorTap(".gray", "はいいろ<br>ha · ii · ro", "grey", "mouseenter")
+changeColorTap(".gray", "はいいろ<br>ha · ii · ro", "grey", "touchstart")
+changeColorUntap(".gray", "GRAY", "mouseleave")
+changeColorUntap(".gray", "GRAY", "touchend")
 
 // RED
-
-red.addEventListener("mouseenter", function () {
-    red.innerHTML = "あか<br>a · ka";
-    red.style.background = "#ff1205";
-    red.style.color = "white";
-})
-red.addEventListener("mouseleave", function () {
-    red.innerHTML = "RED"
-    red.style.background = "white";
-    red.style.color = "black";
-
-})
-red.addEventListener("touchstart", function () {
-    red.innerHTML = "あか<br>a · ka";
-    red.style.background = "#ff1205";
-    red.style.color = "white";
-})
-red.addEventListener("touchend", function () {
-    red.innerHTML = "RED"
-    red.style.background = "white";
-    red.style.color = "black";
-
-})
+changeColorTap(".red", "あか<br>a · ka", "#ff1205", "mouseenter")
+changeColorTap(".red", "あか<br>a · ka", "#ff1205", "touchstart")
+changeColorUntap(".red", "RED", "mouseleave")
+changeColorUntap(".red", "RED", "touchend")
 
 // BLUE
-
-blue.addEventListener("mouseenter", function () {
-    blue.innerHTML = "あおい<br>a · o · i";
-    blue.style.background = "#4260f5";
-    blue.style.color = "white";
-})
-blue.addEventListener("mouseleave", function () {
-    blue.innerHTML = "BLUE";
-    blue.style.background = "white";
-    blue.style.color = "black";
-
-})
-blue.addEventListener("touchstart", function () {
-    blue.innerHTML = "あおい<br>a · o · i";
-    blue.style.background = "#4260f5";
-    blue.style.color = "white";
-})
-blue.addEventListener("touchend", function () {
-    blue.innerHTML = "BLUE"
-    blue.style.background = "white";
-    blue.style.color = "black";
-
-})
+changeColorTap(".blue", "あおい<br>a · o · i", "#4260f5", "mouseenter")
+changeColorTap(".blue", "あおい<br>a · o · i", "#4260f5", "touchstart")
+changeColorUntap(".blue", "BLUE", "mouseleave")
+changeColorUntap(".blue", "BLUE", "touchend")
 
 // YELLOW 
-
-yellow.addEventListener("mouseenter", function () {
-    yellow.innerHTML = "きいろ<br>ki · i · ro";
-    yellow.style.background = "#ffe814";
-    yellow.style.color = "white";
-})
-yellow.addEventListener("mouseleave", function () {
-    yellow.innerHTML = "YELLOW";
-    yellow.style.background = "white";
-    yellow.style.color = "black";
-
-})
-yellow.addEventListener("touchstart", function () {
-    yellow.innerHTML = "きいろ<br>ki · i · ro";
-    yellow.style.background = "#ffe814";
-    yellow.style.color = "white";
-})
-yellow.addEventListener("touchend", function () {
-    yellow.innerHTML = "YELLOW";
-    yellow.style.background = "white";
-    yellow.style.color = "black";
-
-})
+changeColorTap(".yellow", "きいろ<br>ki · i · ro", "#ffe814", "mouseenter")
+changeColorTap(".yellow", "きいろ<br>ki · i · ro", "#ffe814", "touchstart")
+changeColorUntap(".yellow", "YELLOW", "mouseleave")
+changeColorUntap(".yellow", "YELLOW", "touchend")
 
 // PURPLE
-
-purple.addEventListener("mouseenter", function () {
-    purple.innerHTML = "むらさき<br>mu · ra · sa · ki";
-    purple.style.background = "#b825d9";
-    purple.style.color = "white";
-})
-purple.addEventListener("mouseleave", function () {
-    purple.innerHTML = "PURPLE";
-    purple.style.background = "white";
-    purple.style.color = "black";
-
-})
-purple.addEventListener("touchstart", function () {
-    purple.innerHTML = "むらさき<br>mu · ra · sa · ki";
-    purple.style.background = "#b825d9";
-    purple.style.color = "white";
-})
-purple.addEventListener("touchend", function () {
-    purple.innerHTML = "PURPLE";
-    purple.style.background = "white";
-    purple.style.color = "black";
-
-})
+changeColorTap(".purple", "むらさき<br>mu · ra · sa · ki", "#b825d9", "mouseenter")
+changeColorTap(".purple", "むらさき<br>mu · ra · sa · ki", "#b825d9", "touchstart")
+changeColorUntap(".purple", "PURPLE", "mouseleave")
+changeColorUntap(".purple", "PURPLE", "touchend")
 
 // ORANGE
 
-orange.addEventListener("mouseenter", function () {
-    orange.innerHTML = "だいだい<br>da · i · da · i";
-    orange.style.background = "#ff9412";
-    orange.style.color = "white";
-})
-orange.addEventListener("mouseleave", function () {
-    orange.innerHTML = "ORANGE";
-    orange.style.background = "white";
-    orange.style.color = "black";
-
-})
-orange.addEventListener("touchstart", function () {
-    orange.innerHTML = "だいだい<br>da · i · da · i";
-    orange.style.background = "#ff9412";
-    orange.style.color = "white";
-})
-orange.addEventListener("touchend", function () {
-    orange.innerHTML = "ORANGE";
-    orange.style.background = "white";
-    orange.style.color = "black";
-
-})
+changeColorTap(".orange", "だいだい<br>da · i · da · i", "#ff9412", "mouseenter")
+changeColorTap(".orange", "だいだい<br>da · i · da · i", "#ff9412", "touchstart")
+changeColorUntap(".orange", "ORANGE", "mouseleave")
+changeColorUntap(".orange", "ORANGE", "touchend")
 
 // GREEN
-green.addEventListener("mouseenter", function () {
-    green.innerHTML = "みどり<br>mi · do · ri";
-    green.style.background = "#4bd636";
-    green.style.color = "white";
-})
-green.addEventListener("mouseleave", function () {
-    green.innerHTML = "GREEN";
-    green.style.background = "white";
-    green.style.color = "black";
-
-})
-green.addEventListener("touchstart", function () {
-    green.innerHTML = "みどり<br>mi · do · ri";
-    green.style.background = "#4bd636";
-    green.style.color = "white";
-})
-green.addEventListener("touchend", function () {
-    green.innerHTML = "GREEN";
-    green.style.background = "white";
-    green.style.color = "black";
-
-})
+changeColorTap(".green", "みどり<br>mi · do · ri", "#4bd636", "mouseenter")
+changeColorTap(".green", "みどり<br>mi · do · ri", "#4bd636", "touchstart")
+changeColorUntap(".green", "GREEN", "mouseleave")
+changeColorUntap(".green", "GREEN", "touchend")
