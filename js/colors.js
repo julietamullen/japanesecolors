@@ -16,68 +16,53 @@ var green = document.querySelector(".green")
 
 // COLOR CHANGER
 
-function changeColor (color, HTML, bg, event, fontColor) {
+function flashcard (color, hiragana, bg, hiraganaFontColor, english, englishFontColor) {
     var color = document.querySelector(color)
-    color.addEventListener(event, function () {
-    color.innerHTML = HTML;
-    color.style.background = bg;
-    color.style.color = fontColor;
-})
-}
+    color.addEventListener("mouseenter", function () {
+        color.innerHTML = hiragana;
+        color.style.background = bg;
+        color.style.color = hiraganaFontColor;
+    })
+    color.addEventListener("touchstart", function () {
+        color.innerHTML = hiragana;
+        color.style.background = bg;
+        color.style.color = hiraganaFontColor;
+    })
+    color.addEventListener("mouseleave", function () {
+        color.innerHTML = english;
+        color.style.background = "white";
+        color.style.color = englishFontColor;
+    })
+    color.addEventListener("touchend", function () {
+        color.innerHTML = english;
+        color.style.background = "white";
+        color.style.color = englishFontColor;
+    })
+    }
 
 // WHITE
-
-changeColor(".white", "しろ<br>shi · ro", "white", "mouseenter", "black")
-changeColor(".white", "しろ<br>shi · ro", "white", "touchstart", "black")
-changeColor(".white", "WHITE", "white", "mouseleave", "black")
-changeColor(".white", "WHITE", "white", "touchend", "black")
+flashcard (".white", "しろ<br>shi · ro", "white", "black", "WHITE", "black")
 
 // BLACK
-
-changeColor(".black", "くろい<br>ku · ro · i", "black", "mouseenter", "white")
-changeColor(".black", "くろい<br>ku · ro · i", "black", "touchstart", "white")
-changeColor(".black", "BLACK", "white", "mouseleave", "black")
-changeColor(".black", "BLACK", "white", "touchend", "black")
+flashcard (".black", "くろい<br>ku · ro · i", "black", "white", "BLACK", "black")
 
 // GRAY
-changeColor(".gray", "はいいろ<br>ha · ii · ro", "grey", "mouseenter", "white")
-changeColor(".gray", "はいいろ<br>ha · ii · ro", "grey", "touchstart", "white")
-changeColor(".gray", "GRAY", "white", "mouseleave", "black")
-changeColor(".gray", "GRAY", "white", "touchend", "black")
+flashcard (".gray", "はいいろ<br>ha · ii · ro", "gray", "white", "GRAY", "black")
 
 // RED
-changeColor(".red", "あか<br>a · ka", "#ff1205", "mouseenter", "white")
-changeColor(".red", "あか<br>a · ka", "#ff1205", "touchstart", "white")
-changeColor(".red", "RED", "white", "mouseleave", "black")
-changeColor(".red", "RED", "white", "touchend", "black")
+flashcard (".red", "あか<br>a · ka", "#ff1205", "white", "RED", "black")
 
 // BLUE
-changeColor(".blue", "あおい<br>a · o · i", "#4260f5", "mouseenter", "white")
-changeColor(".blue", "あおい<br>a · o · i", "#4260f5", "touchstart", "white")
-changeColor(".blue", "BLUE", "white", "mouseleave", "black")
-changeColor(".blue", "BLUE", "white", "touchend", "black")
+flashcard (".blue", "あおい<br>a · o · i", "#4260f5", "white", "BLUE", "black")
 
 // YELLOW 
-changeColor(".yellow", "きいろ<br>ki · i · ro", "#ffe814", "mouseenter", "white")
-changeColor(".yellow", "きいろ<br>ki · i · ro", "#ffe814", "touchstart", "white")
-changeColor(".yellow", "YELLOW", "white", "mouseleave", "black")
-changeColor(".yellow", "YELLOW", "white", "touchend", "black")
+flashcard (".yellow", "きいろ<br>ki · i · ro", "#ffe814", "white", "YELLOW", "black")
 
 // PURPLE
-changeColor(".purple", "むらさき<br>mu · ra · sa · ki", "#b825d9", "mouseenter", "white")
-changeColor(".purple", "むらさき<br>mu · ra · sa · ki", "#b825d9", "touchstart", "white")
-changeColor(".purple", "PURPLE", "white", "mouseleave", "black")
-changeColor(".purple", "PURPLE", "white", "touchend", "black")
+flashcard (".purple", "むらさき<br>mu · ra · sa · ki", "#b825d9", "white", "PURPLE", "black")
 
 // ORANGE
-
-changeColor(".orange", "だいだい<br>da · i · da · i", "#ff9412", "mouseenter", "white")
-changeColor(".orange", "だいだい<br>da · i · da · i", "#ff9412", "touchstart", "white")
-changeColor(".orange", "ORANGE", "white", "mouseleave", "black")
-changeColor(".orange", "ORANGE", "white", "touchend", "black")
+flashcard (".orange", "だいだい<br>da · i · da · i", "#ff9412", "white", "ORANGE", "black")
 
 // GREEN
-changeColor(".green", "みどり<br>mi · do · ri", "#4bd636", "mouseenter", "white")
-changeColor(".green", "みどり<br>mi · do · ri", "#4bd636", "touchstart", "white")
-changeColor(".green", "GREEN", "white", "mouseleave", "black")
-changeColor(".green", "GREEN", "white", "touchend", "black")
+flashcard (".green", "みどり<br>mi · do · ri", "#4bd636", "white", "GREEN", "black")
