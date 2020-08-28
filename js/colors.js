@@ -14,87 +14,70 @@ var purple = document.querySelector(".purple")
 var orange = document.querySelector(".orange")
 var green = document.querySelector(".green")
 
-// FUNCTIONS
+// COLOR CHANGER
 
-function changeColorTap (color, HTML, bg, event) {
+function changeColor (color, HTML, bg, event, fontColor) {
     var color = document.querySelector(color)
     color.addEventListener(event, function () {
     color.innerHTML = HTML;
     color.style.background = bg;
-    color.style.color = "white";
-})
-}
-
-function changeColorTapWhite (color, HTML, bg, event) {
-    var color = document.querySelector(color)
-    color.addEventListener(event, function () {
-    color.innerHTML = HTML;
-    color.style.background = bg;
-})
-}
-
-function changeColorUntap (color, HTML, event) {
-    var color = document.querySelector(color)
-    color.addEventListener(event, function () {
-    color.innerHTML = HTML;
-    color.style.background = "white";
-    color.style.color = "black";
+    color.style.color = fontColor;
 })
 }
 
 // WHITE
 
-changeColorTapWhite(".white", "しろ<br>shi · ro", "white", "mouseenter")
-changeColorTapWhite(".white", "しろ<br>shi · ro", "white", "touchstart")
-changeColorUntap(".white", "WHITE", "mouseleave")
-changeColorUntap(".white", "WHITE", "touchend")
+changeColor(".white", "しろ<br>shi · ro", "white", "mouseenter", "black")
+changeColor(".white", "しろ<br>shi · ro", "white", "touchstart", "black")
+changeColor(".white", "WHITE", "white", "mouseleave", "black")
+changeColor(".white", "WHITE", "white", "touchend", "black")
 
 // BLACK
 
-changeColorTap(".black", "くろい<br>ku · ro · i", "black", "mouseenter")
-changeColorTap(".black", "くろい<br>ku · ro · i", "black", "touchstart")
-changeColorUntap(".black", "BLACK", "mouseleave")
-changeColorUntap(".black", "BLACK", "touchend")
+changeColor(".black", "くろい<br>ku · ro · i", "black", "mouseenter", "white")
+changeColor(".black", "くろい<br>ku · ro · i", "black", "touchstart", "white")
+changeColor(".black", "BLACK", "white", "mouseleave", "black")
+changeColor(".black", "BLACK", "white", "touchend", "black")
 
 // GRAY
-changeColorTap(".gray", "はいいろ<br>ha · ii · ro", "grey", "mouseenter")
-changeColorTap(".gray", "はいいろ<br>ha · ii · ro", "grey", "touchstart")
-changeColorUntap(".gray", "GRAY", "mouseleave")
-changeColorUntap(".gray", "GRAY", "touchend")
+changeColor(".gray", "はいいろ<br>ha · ii · ro", "grey", "mouseenter", "white")
+changeColor(".gray", "はいいろ<br>ha · ii · ro", "grey", "touchstart", "white")
+changeColor(".gray", "GRAY", "white", "mouseleave", "black")
+changeColor(".gray", "GRAY", "white", "touchend", "black")
 
 // RED
-changeColorTap(".red", "あか<br>a · ka", "#ff1205", "mouseenter")
-changeColorTap(".red", "あか<br>a · ka", "#ff1205", "touchstart")
-changeColorUntap(".red", "RED", "mouseleave")
-changeColorUntap(".red", "RED", "touchend")
+changeColor(".red", "あか<br>a · ka", "#ff1205", "mouseenter", "white")
+changeColor(".red", "あか<br>a · ka", "#ff1205", "touchstart", "white")
+changeColor(".red", "RED", "white", "mouseleave", "black")
+changeColor(".red", "RED", "white", "touchend", "black")
 
 // BLUE
-changeColorTap(".blue", "あおい<br>a · o · i", "#4260f5", "mouseenter")
-changeColorTap(".blue", "あおい<br>a · o · i", "#4260f5", "touchstart")
-changeColorUntap(".blue", "BLUE", "mouseleave")
-changeColorUntap(".blue", "BLUE", "touchend")
+changeColor(".blue", "あおい<br>a · o · i", "#4260f5", "mouseenter", "white")
+changeColor(".blue", "あおい<br>a · o · i", "#4260f5", "touchstart", "white")
+changeColor(".blue", "BLUE", "white", "mouseleave", "black")
+changeColor(".blue", "BLUE", "white", "touchend", "black")
 
 // YELLOW 
-changeColorTap(".yellow", "きいろ<br>ki · i · ro", "#ffe814", "mouseenter")
-changeColorTap(".yellow", "きいろ<br>ki · i · ro", "#ffe814", "touchstart")
-changeColorUntap(".yellow", "YELLOW", "mouseleave")
-changeColorUntap(".yellow", "YELLOW", "touchend")
+changeColor(".yellow", "きいろ<br>ki · i · ro", "#ffe814", "mouseenter", "white")
+changeColor(".yellow", "きいろ<br>ki · i · ro", "#ffe814", "touchstart", "white")
+changeColor(".yellow", "YELLOW", "white", "mouseleave", "black")
+changeColor(".yellow", "YELLOW", "white", "touchend", "black")
 
 // PURPLE
-changeColorTap(".purple", "むらさき<br>mu · ra · sa · ki", "#b825d9", "mouseenter")
-changeColorTap(".purple", "むらさき<br>mu · ra · sa · ki", "#b825d9", "touchstart")
-changeColorUntap(".purple", "PURPLE", "mouseleave")
-changeColorUntap(".purple", "PURPLE", "touchend")
+changeColor(".purple", "むらさき<br>mu · ra · sa · ki", "#b825d9", "mouseenter", "white")
+changeColor(".purple", "むらさき<br>mu · ra · sa · ki", "#b825d9", "touchstart", "white")
+changeColor(".purple", "PURPLE", "white", "mouseleave", "black")
+changeColor(".purple", "PURPLE", "white", "touchend", "black")
 
 // ORANGE
 
-changeColorTap(".orange", "だいだい<br>da · i · da · i", "#ff9412", "mouseenter")
-changeColorTap(".orange", "だいだい<br>da · i · da · i", "#ff9412", "touchstart")
-changeColorUntap(".orange", "ORANGE", "mouseleave")
-changeColorUntap(".orange", "ORANGE", "touchend")
+changeColor(".orange", "だいだい<br>da · i · da · i", "#ff9412", "mouseenter", "white")
+changeColor(".orange", "だいだい<br>da · i · da · i", "#ff9412", "touchstart", "white")
+changeColor(".orange", "ORANGE", "white", "mouseleave", "black")
+changeColor(".orange", "ORANGE", "white", "touchend", "black")
 
 // GREEN
-changeColorTap(".green", "みどり<br>mi · do · ri", "#4bd636", "mouseenter")
-changeColorTap(".green", "みどり<br>mi · do · ri", "#4bd636", "touchstart")
-changeColorUntap(".green", "GREEN", "mouseleave")
-changeColorUntap(".green", "GREEN", "touchend")
+changeColor(".green", "みどり<br>mi · do · ri", "#4bd636", "mouseenter", "white")
+changeColor(".green", "みどり<br>mi · do · ri", "#4bd636", "touchstart", "white")
+changeColor(".green", "GREEN", "white", "mouseleave", "black")
+changeColor(".green", "GREEN", "white", "touchend", "black")
