@@ -5,7 +5,7 @@
         font-family: Helvetica;
     }
 
-    body div.colors {
+    div.colors {
         padding: 1px;
         background-color: rgb(0, 0, 0);
         display: flex;
@@ -19,6 +19,7 @@
         font-size: 25px;
         text-align: right;
         color: white;
+        margin: -1.3rem;
     }
 
     p {
