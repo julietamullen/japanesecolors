@@ -31,7 +31,7 @@ function flashcard (color, hiragana, bg, hiraganaFontColor, english) {
     color.addEventListener("mouseleave", function () {
         color.innerHTML = english;
         color.style.background = "white";
-        color.style.color = "balck";
+        color.style.color = "black";
     })
     color.addEventListener("touchend", function () {
         color.innerHTML = english;
