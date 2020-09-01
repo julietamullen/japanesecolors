@@ -16,7 +16,7 @@ var green = document.querySelector(".green")
 
 // COLOR CHANGER
 
-function flashcard (color, hiragana, bg, hiraganaFontColor, english, englishFontColor) {
+function flashcard (color, hiragana, bg, hiraganaFontColor, english) {
     var color = document.querySelector(color)
     color.addEventListener("mouseenter", function () {
         color.innerHTML = hiragana;
@@ -31,38 +31,38 @@ function flashcard (color, hiragana, bg, hiraganaFontColor, english, englishFont
     color.addEventListener("mouseleave", function () {
         color.innerHTML = english;
         color.style.background = "white";
-        color.style.color = englishFontColor;
+        color.style.color = "balck";
     })
     color.addEventListener("touchend", function () {
         color.innerHTML = english;
         color.style.background = "white";
-        color.style.color = englishFontColor;
+        color.style.color = "black";
     })
     }
 
 // WHITE
-flashcard (".white", "しろ<br>shi · ro", "white", "black", "WHITE", "black")
+flashcard (".white", "しろ<br>shi · ro", "white", "black", "WHITE")
 
 // BLACK
-flashcard (".black", "くろい<br>ku · ro · i", "black", "white", "BLACK", "black")
+flashcard (".black", "くろい<br>ku · ro · i", "black", "white", "BLACK")
 
 // GRAY
-flashcard (".gray", "はいいろ<br>ha · ii · ro", "gray", "white", "GRAY", "black")
+flashcard (".gray", "はいいろ<br>ha · ii · ro", "gray", "white", "GRAY")
 
 // RED
-flashcard (".red", "あか<br>a · ka", "#ff1205", "white", "RED", "black")
+flashcard (".red", "あか<br>a · ka", "#ff1205", "white", "RED")
 
 // BLUE
-flashcard (".blue", "あおい<br>a · o · i", "#4260f5", "white", "BLUE", "black")
+flashcard (".blue", "あおい<br>a · o · i", "#4260f5", "white", "BLUE")
 
 // YELLOW 
-flashcard (".yellow", "きいろ<br>ki · i · ro", "#ffe814", "white", "YELLOW", "black")
+flashcard (".yellow", "きいろ<br>ki · i · ro", "#ffe814", "white", "YELLOW")
 
 // PURPLE
-flashcard (".purple", "むらさき<br>mu · ra · sa · ki", "#b825d9", "white", "PURPLE", "black")
+flashcard (".purple", "むらさき<br>mu · ra · sa · ki", "#b825d9", "white", "PURPLE")
 
 // ORANGE
-flashcard (".orange", "だいだい<br>da · i · da · i", "#ff9412", "white", "ORANGE", "black")
+flashcard (".orange", "だいだい<br>da · i · da · i", "#ff9412", "white", "ORANGE")
 
 // GREEN
-flashcard (".green", "みどり<br>mi · do · ri", "#4bd636", "white", "GREEN", "black")
+flashcard (".green", "みどり<br>mi · do · ri", "#4bd636", "white", "GREEN")
