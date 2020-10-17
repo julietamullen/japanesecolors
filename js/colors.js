@@ -41,28 +41,28 @@ function flashcard (color, hiragana, bg, hiraganaFontColor, english) {
     }
 
 // WHITE
-flashcard (".white", "しろ<br>shi · ro", "white", "black", "WHITE")
+flashcard (".white", "しろ<br>SHIRO", "white", "black", "WHITE")
 
 // BLACK
-flashcard (".black", "くろい<br>ku · ro · i", "black", "white", "BLACK")
+flashcard (".black", "くろ<br>KURO", "black", "white", "BLACK")
 
 // GRAY
-flashcard (".gray", "はいいろ<br>ha · ii · ro", "gray", "white", "GRAY")
+flashcard (".gray", "はいいろ<br>HAIIRO", "gray", "white", "GRAY")
 
 // RED
-flashcard (".red", "あか<br>a · ka", "#ff1205", "white", "RED")
+flashcard (".red", "あか<br>AKA", "#ff1205", "white", "RED")
 
 // BLUE
-flashcard (".blue", "あおい<br>a · o · i", "#4260f5", "white", "BLUE")
+flashcard (".blue", "あお<br>AO", "#4260f5", "white", "BLUE")
 
 // YELLOW 
-flashcard (".yellow", "きいろ<br>ki · i · ro", "#ffe814", "white", "YELLOW")
+flashcard (".yellow", "きいろ<br>KIIRO", "#ffe814", "white", "YELLOW")
 
 // PURPLE
-flashcard (".purple", "むらさき<br>mu · ra · sa · ki", "#b825d9", "white", "PURPLE")
+flashcard (".purple", "むらさき<br>MURASAKI", "#b825d9", "white", "PURPLE")
 
 // ORANGE
-flashcard (".orange", "だいだい<br>da · i · da · i", "#ff9412", "white", "ORANGE")
+flashcard (".orange", "だいだいいろ<br>DAIDAIIRO", "#ff9412", "white", "ORANGE")
 
 // GREEN
-flashcard (".green", "みどり<br>mi · do · ri", "#4bd636", "white", "GREEN")
+flashcard (".green", "みどり<br>MIDORI", "#4bd636", "white", "GREEN")
