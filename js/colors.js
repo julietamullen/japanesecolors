@@ -62,7 +62,7 @@ flashcard (".yellow", "きいろ<br>KIIRO", "#ffe814", "white", "YELLOW")
 flashcard (".purple", "むらさき<br>MURASAKI", "#b825d9", "white", "PURPLE")
 
 // ORANGE
-flashcard (".orange", "だいだいいろ<br>DAIDAIIRO", "#ff9412", "white", "ORANGE")
+flashcard (".orange", "オレンジ<br>ORENJI", "#ff9412", "white", "ORANGE")
 
 // GREEN
 flashcard (".green", "みどり<br>MIDORI", "#4bd636", "white", "GREEN")
