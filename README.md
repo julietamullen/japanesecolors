@@ -1,4 +1,4 @@
-# hiraganacolors
+# Japanese Colors
 
 Simple flashcards for learning a few colors in japanese.
 
