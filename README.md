@@ -2,4 +2,5 @@
 
 Simple flashcards for learning a few colors in japanese.
 
-http://hiraganacolors.netlify.app/
+You can see this deployed at:
+https://japanesecolors.vercel.app/
