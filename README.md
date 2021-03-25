@@ -1,6 +1,6 @@
 # Japanese Colors
 
-![Deployement Image](/colos.jpg)
+![Deployement Image](./colos.jpg)
 
 Simple flashcards for learning a few colors in japanese built with vanilla JavaScript.
 
